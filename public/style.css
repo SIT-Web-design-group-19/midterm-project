@@ -1,3 +1,67 @@
+@import url("vars.css");
+
 body {
-    margin: 0 .1rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    color: var(--white);
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    /* sin(3.5deg) ~= 0.06 */
+    margin-bottom: calc(130vw * 0.06);
+    overflow: hidden;
+}
+
+header > h1 {
+    flex: 1;
+    text-align: center;
+    z-index: 100;
+    transform: translateY(-calc(0.5 * (30vh + 130vw * 0.06) - 50%));
+}
+
+header:after {
+    content: '';
+    height: 8em;
+    width: 100%;
+    transform-origin: bottom right;
+    background-color: var(--black);
+    position: absolute;
+    transform: scaleX(1.1) translateY(calc(0.5 * 30vh - 50%)) rotate(-3.5deg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    jusify-content: center;
+    align-items: center;
+}
+
+#team_members {
+    width: 100%;
+}
+
+#team_members > h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card_container .card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 1px solid black;
 }
