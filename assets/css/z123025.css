@@ -120,6 +120,9 @@ body {
 
   .image-container img {
     width: 90vw;
+  }
+
+  .image-container {
     box-shadow: none;
   }
 }
