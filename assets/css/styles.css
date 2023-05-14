@@ -21,7 +21,6 @@ body {
 }
 
 .intro-text {
-  color: var(--color-baby-blue);
   font-weight: bold;
   font-size: xx-large;
   text-align: center;
