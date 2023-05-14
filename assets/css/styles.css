@@ -11,6 +11,7 @@
   --color-coral: rgb(240, 137, 137);
   --color-gold: rgb(240, 207, 137);
   --color-orange: rgb(240, 160, 137);
+  --color-background: linear-gradient(to bottom right, #001, #000);
 }
 
 /* styles.css */
@@ -19,7 +20,7 @@ body {
   flex-direction: column;
   min-height: 100vh; /* Make sure the body takes up the full viewport height */
   margin: 0;
-  font-family: "Varela Round", sans-serif;
+  font-family: "Kalam", sans-serif;
 }
 
 .media-card-container {
@@ -111,4 +112,46 @@ body {
 a,
 a:visited {
   text-decoration: none;
+  display: block;
+  color: black;
+  margin: auto;
+}
+
+.media-card-title-z123025 {
+  color: var(--color-orange);
+}
+
+.media-card-title-z123042 {
+  color: var(--color-lilac);
+}
+
+.media-card-title-z523015 {
+  color: var(--color-mint-green);
+}
+
+.media-card-1,
+.media-card-2,
+.media-card-3 {
+  animation-name: showElement;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.media-card-2 {
+  animation-delay: 0.6s;
+}
+
+.media-card-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes showElement {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
