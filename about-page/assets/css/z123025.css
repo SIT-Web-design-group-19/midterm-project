@@ -1,6 +1,13 @@
 body {
   font-size: 22px;
   font-family: sans-serif;
+  color: white;
+  background: var(--color-background);
+  animation: showElement 1s ease-in-out;
+}
+
+.image-1, .image-2, .image-3, .image-4 {
+  animation: showElement 3s ease;
 }
 
 .intro-screen-container {
@@ -45,8 +52,13 @@ body {
 }
 
 .footer-container {
+  color: var(--color-text);
   animation: showElement 1s both 2s;
   opacity: 0;
+}
+
+.footer-container a {
+  color: var(--color-text);
 }
 
 @keyframes showElement {
@@ -60,10 +72,11 @@ body {
 
 .image-container {
   gap: 16px;
-  margin: 16px;
+  padding: 24px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .image-container img {
@@ -107,5 +120,6 @@ body {
 
   .image-container img {
     width: 90vw;
+    box-shadow: none;
   }
 }

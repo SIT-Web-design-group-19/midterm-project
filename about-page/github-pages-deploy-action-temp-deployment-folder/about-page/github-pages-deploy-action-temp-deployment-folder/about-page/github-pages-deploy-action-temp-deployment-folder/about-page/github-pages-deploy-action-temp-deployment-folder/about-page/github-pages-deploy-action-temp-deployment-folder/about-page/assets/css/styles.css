@@ -74,9 +74,16 @@ img {
 
 .media-card {
   font-size: 14px;
+  width: 40vh;
+}
+
+.media-card:hover {
+  border: solid 2px var(--color-baby-blue);
+  border-radius: 12px;
 }
 
 .media-card-image {
+  width: 90%;
   height: 128px;
   object-fit: cover;
 }
@@ -84,11 +91,6 @@ img {
 .journey-picture,
 .media-card-image {
   border-radius: 6px;
-}
-
-.media-card,
-.media-card-image {
-  width: 40vh;
 }
 
 .media-card-title,
@@ -169,7 +171,8 @@ a:visited {
   margin-top: 0px;
 }
 
-.journeys-container h3 {
+.journeys-container h1 {
+  margin-top: 128px;
   text-align: center;
 }
 
@@ -217,7 +220,7 @@ a:visited {
     margin: 0px;
   }
 
-  .journeys-container h3 {
+  .journeys-container h1 {
     margin-top: 48px;
   }
 
