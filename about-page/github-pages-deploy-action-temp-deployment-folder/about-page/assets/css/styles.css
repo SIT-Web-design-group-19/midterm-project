@@ -25,11 +25,10 @@ body {
 
 .media-card-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 96px;
   margin-top: 24px;
   flex-wrap: wrap;
-  gap: 24px;
 }
 
 .intro-text {
