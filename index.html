@@ -5,30 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/z123025.css" />
 
-    <script src="./assets/js/script.js" defer></script>
-
-    <!-- Ionic Framework CDN​. -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
-    ></script>
+    <!-- Font -->
     <link
+      href="https://fonts.googleapis.com/css?family=Varela Round"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
     />
-
     <title>Group 19 - Midterm Project</title>
   </head>
   <body>
     <div id="header-container"></div>
 
     <div class="banner">
-      <p>Get to Know Us: Three Globe-Trotters Bringing Fresh Ideas to Japan!</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 230"
@@ -40,57 +29,57 @@
         ></path>
       </svg>
     </div>
-
+    <p class="intro-text">Get to Know Us: Three Globe-Trotters Bringing Fresh Ideas to Japan!</p>
     <div class="media-card-container">
-      <ion-card>
+      <div class="media-card">
         <img
-          alt="Silhouette of mountains"
+          class="media-card-image"
+          src="./assets/images/z123025.jpg"
+        />
+        <div class="media-card-header">
+          <h1 class="media-card-title media-card-title-z123025">Dennis</h1>
+          <p class="media-card-subtitle media-card-subtitle-z123025">The Netherlands 🇳🇱</p>
+        </div>
+        <div class="media-card-content">
+            I'm a software engineer in Japan, passionate about coding and exploring the world of anime. Music, piano, and trying new foods bring me joy. I love sightseeing and seeking out hidden gems wherever I go!        </div>
+      </div>
+
+      <div class="media-card">
+        <img
+          class="media-card-image"
           src="https://ionicframework.com/docs/img/demos/card-media.png"
         />
-        <ion-card-header>
-          <ion-card-title>Dennis</ion-card-title>
-          <ion-card-subtitle>The Netherlands 🇳🇱</ion-card-subtitle>
-        </ion-card-header>
-
-        <ion-card-content>
+        <div class="media-card-header">
+          <h1 class="media-card-title media-card-title-z523015">Card Title</h1>
+          <p class="media-card-subtitle media-card-subtitle-z523015">Card subtitle</p>
+        </div>
+        <div class="media-card-content">
           Here's a small text description for the card content. Nothing more,
           nothing less.
-        </ion-card-content>
-      </ion-card>
-      <ion-card>
+        </div>
+      </div>
+
+      <div class="media-card">
         <img
-          alt="Silhouette of mountains"
+          class="media-card-image"
           src="https://ionicframework.com/docs/img/demos/card-media.png"
         />
-        <ion-card-header>
-          <ion-card-title>Card Title</ion-card-title>
-          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        </ion-card-header>
-
-        <ion-card-content>
+        <div class="media-card-header">
+          <h1 class="media-card-title media-card-title-z123042">Card Title</h1>
+          <p class="media-card-subtitle media-card-subtitle-z123042">Card subtitle</p>
+        </div>
+        <div class="media-card-content">
           Here's a small text description for the card content. Nothing more,
           nothing less.
-        </ion-card-content>
-      </ion-card>
-      <ion-card>
-        <img
-          alt="Silhouette of mountains"
-          src="https://ionicframework.com/docs/img/demos/card-media.png"
-        />
-        <ion-card-header>
-          <ion-card-title>Card Title</ion-card-title>
-          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        </ion-card-header>
-
-        <ion-card-content>
-          Here's a small text description for the card content. Nothing more,
-          nothing less.
-        </ion-card-content>
-      </ion-card>
+        </div>
+      </div>
     </div>
     <div id="page-content">
       <!-- Main content goes here -->
     </div>
-    <div id="footer-container"></div>
+    <footer class="footer-container">
+      <div>Group 19 - Midterm Project</div>
+      <div>Home</div>
+    </footer>
   </body>
 </html>

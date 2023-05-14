@@ -1,14 +1,35 @@
+:root {
+    --color-text: rgb(115, 115, 115);
+    --color-baby-blue: rgb(137,207,240);
+}
+
 /* styles.css */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Make sure the body takes up the full viewport height */
   margin: 0;
+  font-family: 'Varela Round', sans-serif;
+
 }
 
 .media-card-container {
   display: flex;
-  margin: 24px 56px;
+  justify-content: space-between;
+  margin: 96px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+
+.intro-text {
+    color: var(--color-baby-blue);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    margin-top: 64px;
 }
 
 #page-content {
@@ -22,7 +43,7 @@ body {
 .banner {
   position: relative;
   overflow: hidden;
-  height: 40vw; /* Increase the height of the banner relative to the viewport width */
+  height: 25vw; /* Increase the height of the banner relative to the viewport width */
   background-image: url("../images/banner-image.webp");
   background-position: center;
   background-repeat: no-repeat;
@@ -35,11 +56,43 @@ body {
   width: 100%;
 }
 
-.banner p {
-  color: white;
-  font-weight: bold;
-  font-size: large;
-  text-align: center;
-  margin-top: 64px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+.media-card {
+    margin: 16px auto;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+.media-card-image {
+    border-radius: 4px 4px 0px 0px;
+    height: 128px;
+    object-fit: cover;
+}
+
+.media-card, .media-card-image {
+    width: 200px;
+}
+
+.media-card-title, .media-card-subtitle {
+    margin: 0px 16px;
+    margin-top: 6px;
+}
+
+.media-card-subtitle, .media-card-content {
+    color: var(--color-text);
+}
+
+.media-card-content {
+    margin: 16px;
+}
+
+.footer-container {
+    color: var(--text-color);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-container div {
+    padding: 16px;
 }
