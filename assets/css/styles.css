@@ -1,6 +1,16 @@
 :root {
   --color-text: rgb(115, 115, 115);
   --color-baby-blue: rgb(137, 207, 240);
+  --color-pale-pink: rgb(240, 137, 207);
+  --color-mint-green: rgb(137, 240, 207);
+  --color-lavender: rgb(207, 137, 240);
+  --color-peach: rgb(240, 207, 137);
+  --color-light-gray: rgb(207, 207, 207);
+  --color-lime: rgb(137, 240, 137);
+  --color-lilac: rgb(200, 137, 240);
+  --color-coral: rgb(240, 137, 137);
+  --color-gold: rgb(240, 207, 137);
+  --color-orange: rgb(240, 160, 137);
 }
 
 /* styles.css */
