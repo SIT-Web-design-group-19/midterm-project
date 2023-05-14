@@ -78,8 +78,9 @@ img {
 }
 
 .media-card:hover {
-  border: solid 2px var(--color-baby-blue);
   border-radius: 12px;
+  box-shadow: inset 0 0 0 4px var(--color-baby-blue); /* Adjust the color and thickness as needed */
+  transition: all 0.2s ease-in-out;
 }
 
 .media-card-image {
@@ -203,11 +204,14 @@ a:visited {
   color: var(--color-text);
 }
 
-/* styles.css */
-/* ... existing code ... */
+small {
+  text-align: center;
+  color: var(--color-text);
+  margin: 6px;
+}
 
 /* Add this media query for mobile devices */
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 876px) {
   .intro-text {
     font-size: x-large; /* Smaller font size for mobile devices */
     width: 90vw; /* Increase width for mobile devices */
@@ -232,11 +236,16 @@ a:visited {
 
   .media-card {
     width: 100%;
+    margin: 16px;
   }
 
   .journey-container,
   .journey-container-reverse {
     flex-direction: column; /* Make the journey container elements stack vertically */
+  }
+
+  .image-container img {
+    width: 100%;
   }
 
   .journey-picture {

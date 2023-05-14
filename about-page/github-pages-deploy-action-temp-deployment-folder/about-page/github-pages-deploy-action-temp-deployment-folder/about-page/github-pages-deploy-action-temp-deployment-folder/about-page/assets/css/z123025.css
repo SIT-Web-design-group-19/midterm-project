@@ -48,22 +48,6 @@ body {
   margin-right: 16px;
 }
 
-/* Add the following media query */
-@media screen and (min-width: 375px) {
-  .intro-screen-container {
-    font-size: 56px;
-  }
-
-  .intro-first-name {
-    margin-right: 96px;
-  }
-
-  .intro-last-name-container {
-    margin-right: 128px;
-    margin-bottom: 28px;
-  }
-}
-
 .footer-container {
   animation-name: showElement;
   animation-duration: 1s;
@@ -113,4 +97,24 @@ body {
   font-size: 36px;
   margin: 24px;
   margin-bottom: 0px;
+}
+
+/* Add the following media query */
+@media screen and (max-width: 900px) {
+  .intro-screen-container {
+    font-size: 56px;
+  }
+
+  .intro-first-name {
+    margin-right: 96px;
+  }
+
+  .intro-last-name-container {
+    margin-right: 128px;
+    margin-bottom: 28px;
+  }
+
+  .image-container img {
+    width: 90vw;
+  }
 }
