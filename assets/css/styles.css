@@ -84,7 +84,7 @@ img {
 }
 
 .media-card-image {
-  width: 90%;
+  width: 88.5%;
   height: 128px;
   object-fit: cover;
 }
@@ -216,6 +216,11 @@ small {
     font-size: x-large; /* Smaller font size for mobile devices */
     width: 90vw; /* Increase width for mobile devices */
     margin-top: 32px; /* Reduce top margin for mobile devices */
+  }
+
+  .media-card-header {
+    text-align: left;
+    margin: 0px 8px;
   }
 
   .media-card-container,
