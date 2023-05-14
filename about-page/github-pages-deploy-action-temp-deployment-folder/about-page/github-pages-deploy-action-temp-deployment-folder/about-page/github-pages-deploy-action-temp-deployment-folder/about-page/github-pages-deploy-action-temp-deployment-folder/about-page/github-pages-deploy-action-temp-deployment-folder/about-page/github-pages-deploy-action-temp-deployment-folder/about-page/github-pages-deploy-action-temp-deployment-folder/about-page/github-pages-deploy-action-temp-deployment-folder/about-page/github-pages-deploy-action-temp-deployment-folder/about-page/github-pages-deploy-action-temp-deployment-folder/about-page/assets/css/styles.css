@@ -25,10 +25,11 @@ body {
 
 .media-card-container {
   display: flex;
-  justify-content: space-between;
-  margin: 96px;
+  justify-content: center;
+  gap: 96px;
   margin-top: 24px;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .intro-text {
@@ -64,12 +65,16 @@ body {
   width: 100%;
 }
 
-.media-card {
+img {
   margin: 16px;
-  font-size: 14px;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
     rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  object-fit: cover;
+}
+
+.media-card {
+  font-size: 14px;
 }
 
 .media-card-image {
@@ -99,7 +104,7 @@ body {
 }
 
 .footer-container {
-  color: var(--text-color);
+  color: var(--color-text);
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-around;
@@ -117,15 +122,15 @@ a:visited {
   margin: auto;
 }
 
-.media-card-title-z123025 {
+.z123025 {
   color: var(--color-orange);
 }
 
-.media-card-title-z123042 {
+.z123042 {
   color: var(--color-lilac);
 }
 
-.media-card-title-z523015 {
+.z523015 {
   color: var(--color-mint-green);
 }
 
@@ -153,5 +158,94 @@ a:visited {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.journeys-container {
+  margin: 96px;
+  margin-top: 0px;
+}
+
+.journeys-container h3 {
+  text-align: center;
+}
+
+.journey-author {
+  font-size: x-large;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.journey-picture {
+  width: 256px;
+  height: 256px;
+}
+
+.journey-container {
+  display: flex;
+}
+
+.journey-container-reverse {
+  flex-direction: row-reverse;
+}
+
+.journey-text-container {
+  margin: auto 16px;
+}
+
+.journey-text-container .journey-content {
+  color: var(--color-text);
+}
+
+/* styles.css */
+/* ... existing code ... */
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 667px) {
+  .intro-text {
+    font-size: x-large; /* Smaller font size for mobile devices */
+    width: 90vw; /* Increase width for mobile devices */
+    margin-top: 32px; /* Reduce top margin for mobile devices */
+  }
+
+  .media-card-container,
+  .journeys-container {
+    gap: 16px; /* Reduce gap for mobile devices */
+    margin: 0px;
+  }
+
+  .journeys-container h3 {
+    margin-top: 48px;
+  }
+
+  .media-card,
+  .media-card-image {
+    width: 80vw; /* Increase width for mobile devices */
+    text-align: center;
+  }
+
+  .media-card {
+    width: 100%;
+  }
+
+  .journey-container,
+  .journey-container-reverse {
+    flex-direction: column; /* Make the journey container elements stack vertically */
+  }
+
+  .journey-picture {
+    width: 100%; /* Make the journey pictures take up the full width on mobile devices */
+    height: 256px; /* Adjust the height automatically based on the aspect ratio */
+    margin: 0px;
+    border-radius: unset;
+  }
+
+  .journey-text-container {
+    margin: 0 0 16px 0; /* Adjust margin for mobile devices */
+    text-align: center;
+  }
+
+  .journey-content {
+    margin: 0 6px 48px 6px;
   }
 }

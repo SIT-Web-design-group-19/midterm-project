@@ -3,17 +3,25 @@ body {
   font-family: sans-serif;
 }
 
+.media-card-title-z123025 {
+  color: var(--color-orange);
+}
+
 .intro-screen-container {
   font-family: "Kalam", sans-serif;
-  font-size: 100px;
+  font-size: 96px;
   background: var(--color-background);
   height: 100vh;
   width: 100vw;
   color: white;
+  font-size: 100px;
   text-align: right;
-  animation: hideElement 1s forwards 1s;
-  z-index: 9999;
-  position: relative;
+  animation-name: hideElement;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  z-index: 9999; /* Add a high z-index value */
+  position: relative; /* Add position property for z-index to work */
 }
 
 @keyframes hideElement {
@@ -23,8 +31,8 @@ body {
   }
   100% {
     opacity: 0;
-    height: 0;
-    width: 0;
+    height: 0vh;
+    width: 0vw;
   }
 }
 
@@ -36,7 +44,7 @@ body {
 }
 
 .intro-last-name {
-  margin: 0;
+  margin: 0px;
   line-height: 1;
 }
 
@@ -44,8 +52,27 @@ body {
   margin-right: 16px;
 }
 
+/* Add the following media query */
+@media screen and (min-width: 375px) {
+  .intro-screen-container {
+    font-size: 56px;
+  }
+
+  .intro-first-name {
+    margin-right: 96px;
+  }
+
+  .intro-last-name-container {
+    margin-right: 128px;
+    margin-bottom: 28px;
+  }
+}
+
 .footer-container {
-  animation: showElement 1s both 2s;
+  animation-name: showElement;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 2s; /* Update the delay to match the time when hideElement animation finishes */
   opacity: 0;
 }
 
@@ -84,28 +111,10 @@ body {
 .name-container {
   display: flex;
   justify-content: end;
+  margin: 16px;
   gap: 16px;
   font-family: "Kalam", sans-serif;
   font-size: 36px;
   margin: 24px;
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 900px) {
-  .intro-screen-container {
-    font-size: 56px;
-  }
-
-  .intro-first-name {
-    margin-right: 96px;
-  }
-
-  .intro-last-name-container {
-    margin-right: 128px;
-    margin-bottom: 28px;
-  }
-
-  .image-container img {
-    width: 90vw;
-  }
+  margin-bottom: 0px;
 }

@@ -1,35 +1,25 @@
 :root {
-  --color-text: rgb(115, 115, 115);
-  --color-baby-blue: rgb(137, 207, 240);
-  --color-pale-pink: rgb(240, 137, 207);
-  --color-mint-green: rgb(137, 240, 207);
-  --color-lavender: rgb(207, 137, 240);
-  --color-peach: rgb(240, 207, 137);
-  --color-light-gray: rgb(207, 207, 207);
-  --color-lime: rgb(137, 240, 137);
-  --color-lilac: rgb(200, 137, 240);
-  --color-coral: rgb(240, 137, 137);
-  --color-gold: rgb(240, 207, 137);
-  --color-orange: rgb(240, 160, 137);
+  --color-text: #737373;
+  --color-baby-blue: #89cfe0;
+  --color-pale-pink: #f089cf;
+  --color-mint-green: #89f0cf;
+  --color-lavender: #cf89f0;
+  --color-peach: #f0cf89;
+  --color-light-gray: #cfcfcf;
+  --color-lime: #89f089;
+  --color-lilac: #c889f0;
+  --color-coral: #f08989;
+  --color-gold: #f0cf89;
+  --color-orange: #f0a089;
   --color-background: linear-gradient(to bottom right, #001, #000);
 }
 
-/* styles.css */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Make sure the body takes up the full viewport height */
+  min-height: 100vh;
   margin: 0;
   font-family: "Kalam", sans-serif;
-}
-
-.media-card-container {
-  display: flex;
-  justify-content: center;
-  gap: 96px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 .intro-text {
@@ -42,20 +32,20 @@ body {
 }
 
 #page-content {
-  flex: 1; /* Make the content grow and push the footer to the bottom */
+  flex: 1;
 }
 
-.toolbar {
+.toolbar,
+.footer-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .banner {
   position: relative;
   overflow: hidden;
-  height: 25vw; /* Increase the height of the banner relative to the viewport width */
-  background-image: url("../images/banner-image.webp");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 25vw;
+  background: url("../images/banner-image.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -65,11 +55,22 @@ body {
   width: 100%;
 }
 
-img {
+img,
+.media-card-image {
   margin: 16px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
     rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   object-fit: cover;
+  border-radius: 6px;
+}
+
+.media-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 96px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .media-card {
@@ -79,19 +80,13 @@ img {
 
 .media-card:hover {
   border-radius: 12px;
-  box-shadow: inset 0 0 0 4px var(--color-baby-blue); /* Adjust the color and thickness as needed */
+  box-shadow: inset 0 0 0 4px var(--color-baby-blue);
   transition: all 0.2s ease-in-out;
 }
 
 .media-card-image {
   width: 88.5%;
   height: 128px;
-  object-fit: cover;
-}
-
-.journey-picture,
-.media-card-image {
-  border-radius: 6px;
 }
 
 .media-card-title,
@@ -101,19 +96,14 @@ img {
 }
 
 .media-card-subtitle,
-.media-card-content {
+.media-card-content,
+.footer-container,
+small {
   color: var(--color-text);
 }
 
 .media-card-content {
   margin: 16px;
-}
-
-.footer-container {
-  color: var(--color-text);
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer-container div {
@@ -143,10 +133,7 @@ a:visited {
 .media-card-1,
 .media-card-2,
 .media-card-3 {
-  animation-name: showElement;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.3s;
+  animation: showElement 2s forwards;
   opacity: 0;
 }
 
@@ -188,7 +175,8 @@ a:visited {
   height: 256px;
 }
 
-.journey-container {
+.journey-container,
+.journey-container-reverse {
   display: flex;
 }
 
@@ -210,22 +198,16 @@ small {
   margin: 6px;
 }
 
-/* Add this media query for mobile devices */
 @media screen and (max-width: 876px) {
   .intro-text {
-    font-size: x-large; /* Smaller font size for mobile devices */
-    width: 90vw; /* Increase width for mobile devices */
-    margin-top: 32px; /* Reduce top margin for mobile devices */
-  }
-
-  .media-card-header {
-    text-align: left;
-    margin: 0px 8px;
+    font-size: x-large;
+    width: 90vw;
+    margin-top: 32px;
   }
 
   .media-card-container,
   .journeys-container {
-    gap: 16px; /* Reduce gap for mobile devices */
+    gap: 16px;
     margin: 0px;
   }
 
@@ -235,7 +217,7 @@ small {
 
   .media-card,
   .media-card-image {
-    width: 80vw; /* Increase width for mobile devices */
+    width: 80vw;
     text-align: center;
   }
 
@@ -246,22 +228,18 @@ small {
 
   .journey-container,
   .journey-container-reverse {
-    flex-direction: column; /* Make the journey container elements stack vertically */
-  }
-
-  .image-container img {
-    width: 100%;
+    flex-direction: column;
   }
 
   .journey-picture {
-    width: 100%; /* Make the journey pictures take up the full width on mobile devices */
-    height: 256px; /* Adjust the height automatically based on the aspect ratio */
+    width: 100%;
+    height: 256px;
     margin: 0px;
     border-radius: 0px;
   }
 
   .journey-text-container {
-    margin: 0 0 16px 0; /* Adjust margin for mobile devices */
+    margin: 0 0 16px 0;
     text-align: center;
   }
 
