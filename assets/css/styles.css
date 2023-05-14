@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the body takes up the full viewport height */
+  margin: 0;
+}
+
+.media-card-container {
+  display: flex;
+  margin: 24px 56px;
+}
+
+#page-content {
+  flex: 1; /* Make the content grow and push the footer to the bottom */
+}
+
+.toolbar {
+  display: flex;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 40vw; /* Increase the height of the banner relative to the viewport width */
+  background-image: url("../images/banner-image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner p {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  margin-top: 64px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
