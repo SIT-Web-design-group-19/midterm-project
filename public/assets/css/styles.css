@@ -45,7 +45,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 25vw;
-  background: url("../images/banner-image.webp") center no-repeat;
+  background: url("../images/banner.webp") center no-repeat;
   background-size: cover;
 }
 
