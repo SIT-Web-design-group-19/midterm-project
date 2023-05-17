@@ -146,6 +146,11 @@ body {
   animation: showElement 3s both 3s;
 }
 
+.page-content {
+  background-image: url("../../assets/images/z123025/background.png");
+  background-size: cover;
+}
+
 .first-name,
 .last-name {
   font-size: 6vw;
