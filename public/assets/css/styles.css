@@ -14,6 +14,7 @@
   --color-background: linear-gradient(to bottom right, #001, #000);
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -154,6 +155,15 @@ a:visited {
   }
 }
 
+.journeys-container-bg {
+	margin-top: 4em;
+	background-image: url("../images/journeys-container-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 .journeys-container {
   margin: 96px;
   margin-top: 0px;
@@ -178,6 +188,10 @@ a:visited {
 .journey-container,
 .journey-container-reverse {
   display: flex;
+  
+  margin-bottom: 2em;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 7px;
 }
 
 .journey-container-reverse {
