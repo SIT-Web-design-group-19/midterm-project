@@ -1,0 +1,17 @@
+:root {
+  --black: #1e1e1e;
+  --white: #efefef;
+  --color-text: #737373;
+  --color-baby-blue: #89cfe0;
+  --color-pale-pink: #f089cf;
+  --color-mint-green: #89f0cf;
+  --color-lavender: #cf89f0;
+  --color-peach: #f0cf89;
+  --color-light-gray: #cfcfcf;
+  --color-lime: #89f089;
+  --color-lilac: #c889f0;
+  --color-coral: #f08989;
+  --color-gold: #f0cf89;
+  --color-orange: #f0a089;
+  --color-background: linear-gradient(to bottom right, #001, #000);
+}

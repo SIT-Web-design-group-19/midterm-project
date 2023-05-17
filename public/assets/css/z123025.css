@@ -1,17 +1,18 @@
 body {
   font-size: 22px;
-  font-family: sans-serif;
   color: white;
   background: var(--color-background);
   animation: showElement 1s ease-in-out;
 }
 
-.image-1, .image-2, .image-3, .image-4 {
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
   animation: showElement 3s ease;
 }
 
 .intro-screen-container {
-  font-family: "Kalam", sans-serif;
   font-size: 100px;
   background: var(--color-background);
   height: 100vh;
@@ -98,7 +99,6 @@ body {
   display: flex;
   justify-content: end;
   gap: 16px;
-  font-family: "Kalam", sans-serif;
   font-size: 36px;
   margin: 24px;
   margin-bottom: 0;
