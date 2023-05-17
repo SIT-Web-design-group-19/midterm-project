@@ -177,7 +177,7 @@ a:visited {
 .journey-author {
   font-size: x-large;
   font-weight: bold;
-  margin: 6px 0;
+  margin: 16px 0 6px 0;
 }
 
 .journey-picture {
