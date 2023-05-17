@@ -236,4 +236,8 @@ small {
   .journey-content {
     margin: 0 6px 48px 6px;
   }
+
+  .footer-container {
+    font-size: 16px;
+  }
 }

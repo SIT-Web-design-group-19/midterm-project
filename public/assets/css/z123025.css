@@ -63,6 +63,27 @@ body {
   margin-bottom: 0px;
 }
 
+.page-manual {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-title);
+}
+
+.project-info-container {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.project-title {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.project-description {
+  font-size: small;
+}
+
 .footer-container {
   color: var(--color-text-on-white);
   opacity: 0;
