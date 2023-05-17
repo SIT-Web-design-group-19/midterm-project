@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  font-family: "Roboto";
 }
 
 .intro-text {
@@ -16,7 +17,7 @@ body {
   margin-top: 64px;
 }
 
-#page-content {
+.page-content {
   flex: 1;
 }
 
@@ -84,7 +85,7 @@ img,
 .media-card-content,
 .footer-container,
 small {
-  color: var(--color-text);
+  color: var(--color-text-on-white);
 }
 
 .media-card-content {
@@ -118,7 +119,7 @@ a:visited {
 .media-card-1,
 .media-card-2,
 .media-card-3 {
-  animation: showElement 2s forwards;
+  animation: showElement 3s forwards;
   opacity: 0;
 }
 
@@ -174,13 +175,17 @@ a:visited {
 }
 
 .journey-text-container .journey-content {
-  color: var(--color-text);
+  color: var(--color-text-on-white);
 }
 
 small {
   text-align: center;
-  color: var(--color-text);
+  color: var(--color-text-on-white);
   margin: 6px;
+}
+
+.back-to-top {
+  color: var(--color-baby-blue);
 }
 
 @media screen and (max-width: 876px) {
