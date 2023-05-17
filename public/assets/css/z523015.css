@@ -1,0 +1,28 @@
+main > .project_caroussel > .project {
+    overflow: hidden;
+}
+
+header {
+    background-image: url("../images/banner.webp");
+    background-size: cover;
+}
+
+header > .profile > .legend {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 900px) {
+  header > .profile > .name::before {
+    content: "\2002\2002";
+  }
+}
+
+main > h2 {
+    text-align: center;
+}
+
+main > .presentation {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1rem;
+}
