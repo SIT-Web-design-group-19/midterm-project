@@ -17,5 +17,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         id: deployment
         with:
-          folder: public # The folder the action should deploy.
+          folder: ./public # The folder the action should deploy.
           target-folder: ${{ github.ref_name }}
