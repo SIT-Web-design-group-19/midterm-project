@@ -1,26 +1,11 @@
-:root {
-  --color-text: #737373;
-  --color-baby-blue: #89cfe0;
-  --color-pale-pink: #f089cf;
-  --color-mint-green: #89f0cf;
-  --color-lavender: #cf89f0;
-  --color-peach: #f0cf89;
-  --color-light-gray: #cfcfcf;
-  --color-lime: #89f089;
-  --color-lilac: #c889f0;
-  --color-coral: #f08989;
-  --color-gold: #f0cf89;
-  --color-orange: #f0a089;
-  --color-background: linear-gradient(to bottom right, #001, #000);
-}
-
+@import url("./color-styles.css");
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  font-family: "Kalam", sans-serif;
+  font-family: "Roboto";
 }
 
 .intro-text {
@@ -32,7 +17,7 @@ body {
   margin-top: 64px;
 }
 
-#page-content {
+.page-content {
   flex: 1;
 }
 
@@ -46,7 +31,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 25vw;
-  background: url("../images/banner-image.webp") center no-repeat;
+  background: url("../images/banner.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -100,7 +85,7 @@ img,
 .media-card-content,
 .footer-container,
 small {
-  color: var(--color-text);
+  color: var(--color-text-on-white);
 }
 
 .media-card-content {
@@ -134,7 +119,7 @@ a:visited {
 .media-card-1,
 .media-card-2,
 .media-card-3 {
-  animation: showElement 2s forwards;
+  animation: showElement 3s forwards;
   opacity: 0;
 }
 
@@ -163,6 +148,8 @@ a:visited {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+
+
 
 .journeys-container {
   margin: 96px;
@@ -212,6 +199,10 @@ small {
   margin: 6px;
 }
 
+.back-to-top {
+  color: var(--color-baby-blue);
+}
+
 @media screen and (max-width: 876px) {
   .intro-text {
     font-size: x-large;
@@ -259,5 +250,9 @@ small {
 
   .journey-content {
     margin: 0 6px 48px 6px;
+  }
+
+  .footer-container {
+    font-size: 16px;
   }
 }
