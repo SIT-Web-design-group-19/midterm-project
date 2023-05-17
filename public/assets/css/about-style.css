@@ -1,0 +1,10 @@
+@import url("vars.css");
+
+
+header {
+}
+
+header > .name {
+    text-transform: uppercase;
+    font-size: 10rem;
+}
