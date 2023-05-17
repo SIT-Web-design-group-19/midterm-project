@@ -140,6 +140,17 @@ a:visited {
   }
 }
 
+.journeys-container-bg {
+	margin-top: 4em;
+	background-image: url("../images/journeys-container-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+
+
 .journeys-container {
   margin: 96px;
   margin-top: 0px;
@@ -153,17 +164,21 @@ a:visited {
 .journey-author {
   font-size: x-large;
   font-weight: bold;
-  margin: 6px 0;
+  margin: 16px 0 6px 0;
 }
 
 .journey-picture {
   width: 256px;
-  height: 256px;
+  height: minmax(256px, 1fr);
 }
 
 .journey-container,
 .journey-container-reverse {
   display: flex;
+  
+  margin-bottom: 2em;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 7px;
 }
 
 .journey-container-reverse {
@@ -175,12 +190,12 @@ a:visited {
 }
 
 .journey-text-container .journey-content {
-  color: var(--color-text-on-white);
+  color: var(--color-text);
 }
 
 small {
   text-align: center;
-  color: var(--color-text-on-white);
+  color: var(--color-text);
   margin: 6px;
 }
 
