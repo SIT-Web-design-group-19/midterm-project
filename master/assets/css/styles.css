@@ -31,7 +31,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 25vw;
-  background: url("../images/banner-image.webp") center no-repeat;
+  background: url("../images/banner.webp") center no-repeat;
   background-size: cover;
 }
 
@@ -85,7 +85,7 @@ img,
 .media-card-content,
 .footer-container,
 small {
-  color: var(--color-text);
+  color: var(--color-text-on-white);
 }
 
 .media-card-content {
@@ -141,12 +141,12 @@ a:visited {
 }
 
 .journeys-container-bg {
-	margin-top: 4em;
-	background-image: url("../images/journeys-container-bg.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+  margin-top: 4em;
+  background-image: url("../images/journeys-container-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .journeys-container {
@@ -173,9 +173,9 @@ a:visited {
 .journey-container,
 .journey-container-reverse {
   display: flex;
-  
+
   margin-bottom: 2em;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 7px;
 }
 
@@ -185,16 +185,33 @@ a:visited {
 
 .journey-text-container {
   margin: auto 16px;
+  text-align: center;
 }
 
 .journey-text-container .journey-content {
-  color: var(--color-text);
+  color: var(--color-text-on-white);
 }
 
 small {
   text-align: center;
-  color: var(--color-text);
+  color: var(--color-text-on-white);
   margin: 6px;
+}
+
+.our-journey-title {
+  color: var(--color-title);
+  background-color: white;
+  padding: 16px;
+  width: auto;
+  border-radius: 6px;
+  margin: auto;
+  margin-bottom: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+.back-to-top {
+  color: var(--color-baby-blue);
 }
 
 @media screen and (max-width: 876px) {
@@ -239,10 +256,14 @@ small {
 
   .journey-text-container {
     margin: 0 0 16px 0;
-    text-align: center;
   }
 
   .journey-content {
     margin: 0 6px 48px 6px;
+  }
+
+  .our-journey-title {
+    border-radius: 0;
+    font-size: x-large;
   }
 }
